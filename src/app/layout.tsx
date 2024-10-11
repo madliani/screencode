@@ -1,4 +1,5 @@
 import MainLayout from "@/layouts/MainLayout";
+import type { BaseComponentProperties } from "@/types/base-component-properties";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
@@ -21,9 +22,7 @@ export const metadata: Metadata = {
   description: "Tools for managing and manipulating text effectively.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<Properties>) {
+export default function RootLayout({ children }: Readonly<Properties>) {
   return (
     <html lang="en">
       <body

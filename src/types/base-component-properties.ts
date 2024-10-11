@@ -1,3 +1,3 @@
-type BaseComponentProperties = {
+export type BaseComponentProperties = {
   children: React.ReactNode;
 };
