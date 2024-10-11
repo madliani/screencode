@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 
+type Properties = BaseComponentProperties;
+
 export default function MainLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<Properties>) {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-gray-800 text-white py-10">
