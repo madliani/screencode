@@ -19,7 +19,7 @@ export default function Home() {
           <h3 className="text-2xl font-semibold">QR Code Generator</h3>
           <p className="mt-4">Generate QR code from your text.</p>
           <Link
-            href="/qr-code-generator-page"
+            href="/qr-code-generator"
             className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
           >
             Free
