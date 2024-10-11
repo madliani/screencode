@@ -2,6 +2,8 @@ import MainLayout from "@/layouts/MainLayout";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+type Properties = BaseComponentProperties;
+
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -21,9 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<Properties>) {
   return (
     <html lang="en">
       <body
