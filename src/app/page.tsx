@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <header className="bg-gray-800 text-white py-10">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-bold">ScreenCode</h1>
@@ -16,15 +16,13 @@ const Home = () => {
         </div>
       </header>
 
-      <main className="py-20">
+      <main className="flex-grow py-20">
         <div className="container mx-auto" id="tools">
           <h2 className="text-4xl font-bold text-center mb-12">Our Tools</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <h3 className="text-2xl font-semibold">Text Formatter</h3>
-              <p className="mt-4">
-                Format your text to meet your needs.
-              </p>
+              <p className="mt-4">Format your text to meet your needs.</p>
               <a
                 href="/formatter"
                 className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
@@ -34,9 +32,7 @@ const Home = () => {
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <h3 className="text-2xl font-semibold">QR Code Generator</h3>
-              <p className="mt-4">
-                Generate QR code from your text.
-              </p>
+              <p className="mt-4">Generate QR code from your text.</p>
               <a
                 href="/analyzer"
                 className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
