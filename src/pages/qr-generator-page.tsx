@@ -1,7 +1,7 @@
 import QrCodeGenerator from "@/components/QrCodeGenerator";
 import MainLayout from "@/layouts/MainLayout";
 
-export default function () {
+export default function QrGeneratorPage () {
   return (
     <MainLayout>
       <div className="container mx-auto" id="tools">
