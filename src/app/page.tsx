@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="container mx-auto" id="tools">
@@ -6,32 +8,32 @@ export default function Home() {
         <div className="bg-white rounded-lg shadow-lg p-6 text-center">
           <h3 className="text-2xl font-semibold">Text Formatter</h3>
           <p className="mt-4">Format your text to meet your needs.</p>
-          <a
+          <Link
             href="/formatter"
             className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
           >
             Free
-          </a>
+          </Link>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center">
           <h3 className="text-2xl font-semibold">QR Code Generator</h3>
           <p className="mt-4">Generate QR code from your text.</p>
-          <a
+          <Link
             href="/qr-generator-page"
             className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
           >
             Free
-          </a>
+          </Link>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 text-center">
           <h3 className="text-2xl font-semibold">Text Comparison</h3>
           <p className="mt-4">Compare different texts.</p>
-          <a
+          <Link
             href="/comparison"
             className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
           >
             Free
-          </a>
+          </Link>
         </div>
       </div>
     </div>
